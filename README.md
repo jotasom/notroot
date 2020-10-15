@@ -9,7 +9,7 @@ access.
 
 First, clone this repository:
 
-    git clone https://github.com/Gregwar/notroot.git
+    git clone https://github.com/andrewlunde/notroot.git
 
 Then, add this line to your `.bashrc` file:
 
