@@ -134,3 +134,23 @@ cd /home/user/projects/mta_python/python
 python3 /home/user/notroot/usr/bin/pip3 install -t vendor -r requirements.txt
 
 python3 /home/user/notroot/usr/bin/pip3 install -r requirements.txt
+
+
+//Lastest .bashrc
+
+export APT_CONFIG=/home/user/notroot/apt.conf
+source "$HOME/notroot/bashrc"
+
+PATH="/home/user/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/user/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/user/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/user/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/user/perl5"; export PERL_MM_OPT;
+
+export PYTHONHOME=/home/user/notroot/usr
+export PYTHONPATH=$PYTHONHOME/lib/python3.7
+
+PATH="/home/user/.local/bin":${PATH}; export PATH;
+
+cd /home/user/notroot/usr/bin
+ln -s python3 python
