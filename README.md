@@ -25,7 +25,7 @@ Then, reload bash.
 
 Simply run something like this:
 
-    notroot install libjsoncpp-dev libjsoncpp0
+    notroot install htop
 
 This will download and extract packages.
 
