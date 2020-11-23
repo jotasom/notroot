@@ -12,8 +12,10 @@ First, clone this repository:
     git clone https://github.com/andrewlunde/notroot.git
 
 Then, add this line to your `.bashrc` file:
-
-    source "$HOME/notroot/bashrc"
+```
+export APT_CONFIG=/home/user/notroot/apt.conf
+source "$HOME/notroot/bashrc"
+```
 
 (You can adapt the path to the `notroot` directory)
 
