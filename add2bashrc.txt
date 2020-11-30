@@ -1,0 +1,4 @@
+
+export APT_CONFIG=/home/user/notroot/apt.conf
+source "$HOME/notroot/bashrc"
+

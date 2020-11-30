@@ -20,6 +20,16 @@ source "$HOME/notroot/bashrc"
 (You can adapt the path to the `notroot` director
 Then, reload bash.
 
+## Prepare APT folders
+```
+mkdir -p /tmp/apt/lists
+mkdir -p /tmp/apt/arch
+mkdir -p /tmp/apt/src 
+mkdir -p /tmp/apt/pkg
+
+
+```
+
 ## Usage
 
 Simply run something like this:
