@@ -152,5 +152,16 @@ export PYTHONPATH=$PYTHONHOME/lib/python3.7
 
 PATH="/home/user/.local/bin":${PATH}; export PATH;
 
+alias pip="/home/user/notroot/usr/bin/python3 /home/user/notroot/usr/lib/python3/dist-packages/pip"
+alias vi="vim"
+
+
+
 cd /home/user/notroot/usr/bin
 ln -s python3 python
+
+mkdir -p /tmp/apt/lists/partial
+
+apt-get update
+
+notroot install python3-ipykernel

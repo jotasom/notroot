@@ -17,8 +17,7 @@ export APT_CONFIG=/home/user/notroot/apt.conf
 source "$HOME/notroot/bashrc"
 ```
 
-(You can adapt the path to the `notroot` directory)
-
+(You can adapt the path to the `notroot` director
 Then, reload bash.
 
 ## Usage
