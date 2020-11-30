@@ -9,12 +9,21 @@ access.
 
 First, clone this repository:
 
-    git clone https://github.com/andrewlunde/notroot.git
+```
+cd /home/user
+git clone https://github.com/andrewlunde/notroot.git
+```
 
 Then, add this line to your `.bashrc` file:
 ```
 export APT_CONFIG=/home/user/notroot/apt.conf
 source "$HOME/notroot/bashrc"
+```
+
+```
+cd notroot
+cat add2bashrc.txt >> ~/.bashrc
+exit
 ```
 
 (You can adapt the path to the `notroot` director
