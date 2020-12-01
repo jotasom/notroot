@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir -p /home/user/notroot/tmp/apt/lists
+mkdir -p /home/user/notroot/tmp/apt/arch
+mkdir -p /home/user/notroot/tmp/apt/src 
+mkdir -p /home/user/notroot/tmp/apt/pkg
+mkdir -p /home/user/notroot/etc/apt/preferences.d
+mkdir -p /home/user/notroot/etc/apt/apt.conf.d
+mkdir -p /home/user/notroot/etc/apt/auth.conf.d
+apt-get update
+notroot install libapt-pkg-perl
+notroot install apt-rdepends
+perl --version
+notroot install jq

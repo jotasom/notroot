@@ -14,36 +14,24 @@ cd /home/user
 git clone https://github.com/andrewlunde/notroot.git
 ```
 
-Then, add this line to your `.bashrc` file:
-```
-export APT_CONFIG=/home/user/notroot/apt.conf
-source "$HOME/notroot/bashrc"
-```
-
+Then, modify your `.bashrc` file by running these commands.
 ```
 cd notroot
 cat add2bashrc.txt >> ~/.bashrc
+```
+You'll need to exit the current terminal and reopen a new one to affect the changes.
+```
 exit
 ```
 
-(You can adapt the path to the `notroot` director
-Then, reload bash.
-
 ## Prepare APT folders
+
+In order for your to run apt-get as a non-root user, you'll need to prepare some directories locally and direct apt to use them.
+
+Run this batch file to make these preparations.
+
 ```
-mkdir -p /home/user/notroot/tmp/apt/lists
-mkdir -p /home/user/notroot/tmp/apt/arch
-mkdir -p /home/user/notroot/tmp/apt/src 
-mkdir -p /home/user/notroot/tmp/apt/pkg
-mkdir -p /home/user/notroot/etc/apt/preferences.d
-mkdir -p /home/user/notroot/etc/apt/apt.conf.d
-mkdir -p /home/user/notroot/etc/apt/auth.conf.d
-apt-get update
-notroot install python3-apt
-notroot install python-apt-dev
-notroot install libapt-pkg-perl
-cpan
-notroot install apt-rdepends
+./prepapt
 ```
 
 ## Usage
