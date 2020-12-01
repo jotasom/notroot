@@ -148,7 +148,7 @@ PERL_MB_OPT="--install_base \"/home/user/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/user/perl5"; export PERL_MM_OPT;
 
 export PYTHONHOME=/home/user/notroot/usr
-export PYTHONPATH=$PYTHONHOME/lib/python3.7
+export PYTHONPATH=$PYTHONHOME/lib/python3.7:$PYTHONHOME/lib/python3/dist-packages
 
 PATH="/home/user/.local/bin":${PATH}; export PATH;
 

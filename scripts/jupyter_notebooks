@@ -1,0 +1,25 @@
+#!/bin/bash
+notroot install python3-pip
+echo '' >> ~/.bashrc 
+echo 'alias pip="/home/user/notroot/usr/bin/python3 /home/user/notroot/usr/lib/python3/dist-packages/pip"' >> ~/.bashrc
+echo 'alias vi="vim"' >> ~/.bashrc
+
+source ~/.bashrc
+pip install --upgrade pip
+
+mkdir -p ~/.jupyter
+notroot install python3-dev
+notroot install jupyter-notebook
+notroot install python3-ipywidgets
+notroot install python3-notebook
+echo '' >> ~/.bashrc 
+echo 'export PYTHONHOME=/home/user/notroot/usr' >> ~/.bashrc
+echo 'export PYTHONPATH=$PYTHONHOME/lib/python3.7' >> ~/.bashrc
+echo 'alias python="python3"' >> ~/.bashrc
+
+cmd='sed -i -e "s/\/usr\/bin\/python3/\/home\/user\/notroot\/usr\/bin\/python3/g" /home/user/notroot/usr/bin/jupyter*'
+echo $cmd
+eval $cmd
+
+
+source ~/.bashrc
