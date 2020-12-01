@@ -6,9 +6,13 @@ echo 'alias vi="vim"' >> ~/.bashrc
 
 source ~/.bashrc
 pip install --upgrade pip
+pip install --upgrade setuptools
+pip install --upgrade wheel
+echo 'export PATH=/home/user/.local/bin:$PATH' >> ~/.bashrc 
 
 mkdir -p ~/.jupyter
 notroot install python3-dev
+notroot install python3-ipykernel
 notroot install jupyter-notebook
 notroot install python3-ipywidgets
 notroot install python3-notebook
