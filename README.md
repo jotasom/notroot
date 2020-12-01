@@ -31,12 +31,19 @@ Then, reload bash.
 
 ## Prepare APT folders
 ```
-mkdir -p /tmp/apt/lists
-mkdir -p /tmp/apt/arch
-mkdir -p /tmp/apt/src 
-mkdir -p /tmp/apt/pkg
-
-
+mkdir -p /home/user/notroot/tmp/apt/lists
+mkdir -p /home/user/notroot/tmp/apt/arch
+mkdir -p /home/user/notroot/tmp/apt/src 
+mkdir -p /home/user/notroot/tmp/apt/pkg
+mkdir -p /home/user/notroot/etc/apt/preferences.d
+mkdir -p /home/user/notroot/etc/apt/apt.conf.d
+mkdir -p /home/user/notroot/etc/apt/auth.conf.d
+apt-get update
+notroot install python3-apt
+notroot install python-apt-dev
+notroot install libapt-pkg-perl
+cpan
+notroot install apt-rdepends
 ```
 
 ## Usage

@@ -165,3 +165,29 @@ mkdir -p /tmp/apt/lists/partial
 apt-get update
 
 notroot install python3-ipykernel
+
+// Base Python
+
+notroot install libpython3.7-minimal
+notroot install python3.7-minimal
+notroot install python3-minimal
+notroot install mime-support
+notroot install libmpdec2
+notroot install readline-common
+notroot install libreadline7
+notroot install libsqlite3-0
+notroot install libpython3.7-stdlib
+notroot install python3.7
+notroot install libpython3-stdlib
+notroot install python3
+notroot install bzip2
+notroot install libmagic-mgc
+notroot install libmagic1
+notroot install file
+notroot install xz-utils
+
+// Try to get recursive installs working
+
+notroot install libapt-pkg-perl
+
+notroot install apt-rdepends
