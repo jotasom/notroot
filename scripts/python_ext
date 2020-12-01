@@ -1,0 +1,8 @@
+#!/bin/bash
+mkdir -p /home/user/default-plugins
+cd /home/user/default-plugins
+curl -LJO https://open-vsx.org/api/redhat/vscode-yaml/0.13.0/file/redhat.vscode-yaml-0.13.0.vsix
+curl -LJO https://open-vsx.org/api/ms-python/python/2020.10.332292344/file/ms-python.python-2020.10.332292344.vsix
+curl -LJO https://open-vsx.org/api/ms-python/anaconda-extension-pack/1.0.1/file/ms-python.anaconda-extension-pack-1.0.1.vsix
+echo "Stop/Start your DevSpace!
+
