@@ -5,7 +5,7 @@
 This simple tool allow you to install apt packages without root
 access.
 
-## Installing
+## Installing in Business Application Studio(BAS)
 
 First, clone this repository:
 
