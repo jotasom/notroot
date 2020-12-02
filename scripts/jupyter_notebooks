@@ -15,5 +15,7 @@ cmd='sed -i -e "s/\/usr\/bin\/python3/\/home\/user\/notroot\/usr\/bin\/python3/g
 echo $cmd
 eval $cmd
 
+cp jupyter_config/jupyter_notebook_config.json ~/.jupyter
+cp jupyter_config/jupyter_notebook_config.py ~/.jupyter
 
-source ~/.bashrc
+#source ~/.bashrc
