@@ -12,16 +12,19 @@ First, clone this repository:
 ```
 cd /home/user
 git clone https://github.com/andrewlunde/notroot.git
+
 ```
 
 Then, modify your `.bashrc` file by running these commands.
 ```
-cd notroot
+cd /home/user/notroot
 cat add2bashrc.txt >> ~/.bashrc
+
 ```
 You'll need to exit the current terminal and reopen a new one to affect the changes.
 ```
 exit
+
 ```
 
 ## Prepare APT folders
@@ -33,6 +36,7 @@ Run this batch file to make these preparations.
 ```
 cd /home/user/notroot
 ./prepapt
+
 ```
 
 As a test this script installs the jq tool which has a few dependencies.  If all is working well, you should see the following in the output.
