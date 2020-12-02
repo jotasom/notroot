@@ -65,7 +65,7 @@
 #  token login mechanism.
 #  
 #  This can be set to false to prevent changing password from the UI/API.
-c.NotebookApp.allow_password_change = True
+#c.NotebookApp.allow_password_change = True
 
 ## Allow requests where the Host header doesn't point to a local server
 #  
@@ -79,7 +79,6 @@ c.NotebookApp.allow_password_change = True
 #  
 #  Local IP addresses (such as 127.0.0.1 and ::1) are allowed as local, along
 #  with hostnames configured in local_hostnames.
-#c.NotebookApp.allow_remote_access = False
 c.NotebookApp.allow_remote_access = True
 
 ## Whether to allow the user to run the notebook as root.
@@ -229,7 +228,6 @@ c.NotebookApp.ip = '*'
 #  Local IP addresses (such as 127.0.0.1 and ::1) are automatically accepted as
 #  local as well.
 #c.NotebookApp.local_hostnames = ['localhost']
-#c.NotebookApp.local_hostnames = ['a-team-jn.cfapps.us10.hana.ondemand.com']
 
 ## The login handler class to use.
 #c.NotebookApp.login_handler_class = 'notebook.auth.login.LoginHandler'
@@ -261,14 +259,12 @@ c.NotebookApp.ip = '*'
 #c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-#c.NotebookApp.notebook_dir = ''
-c.NotebookApp.notebook_dir = 'notebooks'
+c.NotebookApp.notebook_dir = '/home/user/notroot/scripts/notebooks'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
 #  module, unless it is overridden using the --browser (NotebookApp.browser)
 #  configuration option.
-#c.NotebookApp.open_browser = True
 c.NotebookApp.open_browser = False
 
 ## Hashed password to use for web authentication.
@@ -278,7 +274,7 @@ c.NotebookApp.open_browser = False
 #    from notebook.auth import passwd; passwd()
 #  
 #  The string should be of the form type:salt:hashed-password.
-#c.NotebookApp.password = ''
+c.NotebookApp.password = ''
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
@@ -286,7 +282,7 @@ c.NotebookApp.open_browser = False
 #  
 #  In such a case, server the notebook server on localhost is not secure since
 #  any user can connect to the notebook server via ssh.
-#c.NotebookApp.password_required = False
+c.NotebookApp.password_required = False
 
 ## The port the notebook server will listen on.
 #c.NotebookApp.port = 8888
@@ -343,7 +339,7 @@ c.NotebookApp.port = 8080
 #  
 #  Setting to an empty string disables authentication altogether, which is NOT
 #  RECOMMENDED.
-#c.NotebookApp.token = '<generated>'
+c.NotebookApp.token = ''
 
 ## Supply overrides for the tornado.web.Application that the Jupyter notebook
 #  uses.
@@ -534,7 +530,7 @@ c.NotebookApp.port = 8080
 #c.Session.unpacker = 'json'
 
 ## Username for the Session. Default is your system username.
-#c.Session.username = 'hxeadm'
+#c.Session.username = 'username'
 
 #------------------------------------------------------------------------------
 # MultiKernelManager(LoggingConfigurable) configuration
