@@ -63,6 +63,16 @@ Simply run something like this:
 
 This will download and extract packages.
 
+## Scripts
+
+Find a handy set of scripts you can use as examples of what this approach can yield.
+
+```
+cd /home/user/notroot/scripts
+./python_tools
+
+```
+
 ## Support 
 
 Note that this is a minimalist script designed to install libraries 

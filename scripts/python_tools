@@ -3,10 +3,11 @@ notroot install python3-pip
 echo '' >> ~/.bashrc 
 echo 'alias pip="/home/user/notroot/usr/bin/python3 /home/user/notroot/usr/lib/python3/dist-packages/pip"' >> ~/.bashrc
 echo 'alias vi="vim"' >> ~/.bashrc
-
+alias pip="/home/user/notroot/usr/bin/python3 /home/user/notroot/usr/lib/python3/dist-packages/pip"
 source ~/.bashrc
+pip -V
 pip install --upgrade pip
 pip install --upgrade setuptools
 pip install --upgrade wheel
 echo 'export PATH=/home/user/.local/bin:$PATH' >> ~/.bashrc 
-
+export PATH=/home/user/.local/bin:$PATH
