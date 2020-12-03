@@ -62,8 +62,14 @@ If you do not, then something went wrong.  Go back and check the prior steps.
 ## Usage
 
 Simply run something like this:
+```
+notroot install htop
 
-    notroot install htop
+```
+If you want to see what packages are available for install, use the search:
+```
+notroot search golang
+```
 
 This will download and extract packages.
 
