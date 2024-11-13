@@ -1,5 +1,2 @@
 
-export APT_CONFIG=/home/user/notroot/apt.conf
 source "$HOME/notroot/bashrc"
-
-export PERL5LIB=/home/user/notroot/usr/lib/x86_64-linux-gnu/perl5/5.28:$PERL5LIB

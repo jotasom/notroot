@@ -33,11 +33,12 @@ fi
 
 case $1 in
     search)
+        shift
         if [ "$MODE" = "apt" ]; then
-            apt-cache search $2
+            apt-cache search $@
         fi
         if [ "$MODE" = "yum" ]; then
-            yum search $2
+            yum search $@
         fi
         ;;
     install)

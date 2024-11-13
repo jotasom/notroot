@@ -1,5 +1,11 @@
 #!/bin/bash
 
+PERL5DIR=find . -type f -name "AptPkg.pm" | sed -r -n "s/\.\/(.+perl5\/[^/]+).+/\1/p"
+PERL5DIR= $PERL5DIR || "usr/lib/x86_64-linux-gnu/perl5/5.36"
+
+export APT_CONFIG=/home/user/notroot/apt.conf
+export PERL5LIB=/home/user/notroot/$PERL5DIR:$PERL5LIB
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]-$0}" )" && pwd )"
 for ROOT in $DIR $DIR/deb
 do
